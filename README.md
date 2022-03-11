@@ -1,5 +1,6 @@
 # Goalkicker_Downloader
-A little script/program to download all books from GoalKicker at once. <br /> <br />
+A little script to download all books from GoalKicker at once. <br />
+An .exe file is also supplied for easy use on a Windows machine. <br />
 
 ## Available options
 [1] Downloader folder <br />
