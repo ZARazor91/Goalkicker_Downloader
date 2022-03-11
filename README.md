@@ -11,6 +11,7 @@ Also creates the book_storage folder in case the folder doesn't exists.
 
 [3] Select own folder <br />
 Allows you to select a folder into which the books will be downloaded.
+If no folder is selected, the book_storage folder method is used.
 
 [0] Donate to GoalKicker <br />
 Opens the donation site for GoalKicker to suppport them.
