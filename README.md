@@ -6,7 +6,8 @@ A little script/program to download all books from GoalKicker at once.
 Downloads all books in the same directory like the downloader itself.
 
 [2] Book_storage folder <br />
-Creates a book_storage folder if not exists in the downloader folder and downloads all books into the book_storage folder.
+Downloads all books into the book_storage folder at the downloader folder. <br/>
+Also creates the book_storage folder in case the folder doesn't exists.
 
 [3] Select own folder <br />
 Allows you to select a folder into which the books will be downloaded.
