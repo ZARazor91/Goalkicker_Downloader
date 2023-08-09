@@ -19,18 +19,21 @@ def use_storage():
     directory = str(os.path.abspath(os.path.dirname(sys.argv[0]))).replace('\\', '/') + '/book_storage/'
     return directory
 
+if os.name=='nt':
+    third_opt = '[3] Select own folder\n'
+else:
+    third_opt = ''
 
 os.system('cls' if os.name=='nt' else 'clear')
 while selection == '-1':
-    selection = input('Where to save the books?\n[1] Downloader folder\n[2] Book_storage folder\n[3] Select own '
-                      'folder\n[0] Donate to GoalKicker :)\n[E] Exit program\nYour selection: ')
+    selection = input(f'Where to save the books?\n[1] Downloader folder\n[2] Book_storage folder\n{third_opt}[0] Donate to GoalKicker :)\n[E] Exit program\nYour selection: ')
     if selection == '1':
         path = str(os.path.abspath(os.path.dirname(sys.argv[0]))).replace('\\', '/') + '/'
         print('\nUsing same folder as downloader')
     elif selection == '2':
         path = use_storage()
         print('\nUsing book_storage in downloader folder')
-    elif selection == '3':
+    elif selection == '3' and os.name == 'nt':
         path = filedialog.askdirectory() + '/'
         if path == '/':
             path = use_storage()
